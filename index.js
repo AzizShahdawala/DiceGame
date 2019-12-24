@@ -1,3 +1,12 @@
+// User Input
+
+var p1=prompt("Player1 Name: ");
+var p2=prompt("Player2 Name: ");
+
+document.getElementsByClassName("player")[0].textContent=p1;
+document.getElementsByClassName("player")[1].textContent=p2;
+
+
 // First Dice..
 
 var RandomNumber1= Math.floor(Math.random() * 6) + 1;
@@ -16,11 +25,11 @@ document.querySelectorAll("img")[1].setAttribute("src",diceImage2);
 
 if(RandomNumber1 > RandomNumber2)
 {
-    document.getElementsByClassName("intro")[0].textContent="Player 1 Wins!!";
+    document.getElementsByClassName("intro")[0].textContent= p1 +" Wins!!";
 }
 else if(RandomNumber2 > RandomNumber1)
 {
-    document.getElementsByClassName("intro")[0].textContent="Player 2 Wins!!";
+    document.getElementsByClassName("intro")[0].textContent= p2+ " Wins!!";
 }
 else
 {
