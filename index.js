@@ -6,7 +6,8 @@ var p2=prompt("Player2 Name: ");
 document.getElementsByClassName("player")[0].textContent=p1;
 document.getElementsByClassName("player")[1].textContent=p2;
 
-
+function dice()
+{
 // First Dice..
 
 var RandomNumber1= Math.floor(Math.random() * 6) + 1;
@@ -35,3 +36,6 @@ else
 {
     document.getElementsByClassName("intro")[0].textContent="Draw";
 }
+}
+
+document.getElementsByTagName("button")[0].addEventListener("click",dice);
