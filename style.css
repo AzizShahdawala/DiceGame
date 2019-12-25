@@ -42,6 +42,44 @@ button
     color: rgb(163, 34, 2);
 }
 
+@media(max-width:900px)
+{
+    .container
+{
+   text-align: center;
+}
+
+.title
+{
+    padding-bottom: 1%;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: rgba(223, 35, 35, 0.89);
+}
+
+.intro
+{
+    padding-bottom: 1%;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+button
+{
+    padding: 1%;
+    font-size: 2rem;
+    background-color: burlywood;
+    border-style: dashed;
+}
+    .dice1, .dice2
+    {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        padding-top: 4%;
+    }
+}
 
 .dice
 {
