@@ -1,0 +1,88 @@
+body {
+  margin: 0 auto;
+}
+
+section {
+    height: 95vh;
+}
+
+/* Head Section */
+.container {
+  display: flex;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.title {
+  font-family: cursive;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #824c96;
+  margin: 20px;
+}
+
+.title:hover {
+  color: chartreuse;
+  cursor: pointer;
+}
+
+.intro {
+  font-size: 1.5rem;
+  margin: 20px;
+}
+
+button {
+  max-width: 100px;
+  width: 100%;
+  transition: all 0.5s ease-out;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+/* ----------- */
+
+/* Dice Section */
+
+.dice-wrapper {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .dice-wrapper {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .dice1, .dice2 {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+.player {
+    text-align: center;
+}
+
+/* ----------- */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c7e1f3;
+}
+
+a {
+    text-decoration: none;
+}
